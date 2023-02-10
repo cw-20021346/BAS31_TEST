@@ -5,6 +5,8 @@
 //#define	VERSION   3			// 워터펌프 누수 개선 by. 김진우1급 // checksum : 7F97
 #define	VERSION   4			// 자동 물검사 추가  by. 김민환 선임  /// checksum: 116A
 
+//Change_config
+
 
 /************************************************************/
 /* 양산 config SET 양산시 모두 SET 하세요.*/
