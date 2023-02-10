@@ -1,0 +1,7 @@
+---- EEP_ID_NUM Matches (6 in 2 files) ----
+_eeprom_control_ in eeprom.c (D:\coway\2023\Project\Line_up\Bidet\BAS31\BAS31-A\SourceFile\Source\EEPROM) :     U8 ReadData[ EEP_ID_NUM ];
+_eeprom_control_ in eeprom.c (D:\coway\2023\Project\Line_up\Bidet\BAS31\BAS31-A\SourceFile\Source\EEPROM) :     U8 WriteData[ EEP_ID_NUM ];
+SaveEepromId in eeprom.c (D:\coway\2023\Project\Line_up\Bidet\BAS31\BAS31-A\SourceFile\Source\EEPROM) :     if( mu8Id < EEP_ID_NUM )
+LoadData in eeprom.c (D:\coway\2023\Project\Line_up\Bidet\BAS31\BAS31-A\SourceFile\Source\EEPROM) :     mu8Ret = EepromSeqRead( EEP_ID_INIT_FIRST, &Eep.ReadData[0], EEP_ID_NUM );
+WriteData in eeprom.c (D:\coway\2023\Project\Line_up\Bidet\BAS31\BAS31-A\SourceFile\Source\EEPROM) :         mu8PageNum = EEP_ID_NUM + EEP_PAGE_SIZE;
+eeprom.h (D:\coway\2023\Project\Line_up\Bidet\BAS31\BAS31-A\SourceFile\Source\EEPROM) line 50 :     EEP_ID_NUM

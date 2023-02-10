@@ -1,0 +1,703 @@
+
+
+
+78K0R Linker V1.80                            Date:29 May 2018 Page:   1
+
+Command:   -yC:\Program Files (x86)\Renesas Electronics\CS+\CACX\Device\
+           RL78\Devicefile -_msgoff -oDefaultBuild\LIKE_KEY_PBA.lmf -go8
+           5h,1FE00h,512 -gb0FF73E8H -mi0 -s -pDefaultBuild\LIKE_KEY_PBA
+           .map C:\Program Files (x86)\Renesas Electronics\CS+\CACX\CA78
+           K0R\V1.72\lib78k0r\s0rll.rel DefaultBuild\r_systeminit.rel De
+           faultBuild\r_cg_cgc.rel DefaultBuild\r_cg_cgc_user.rel Defaul
+           tBuild\r_cg_port.rel DefaultBuild\r_cg_intc.rel DefaultBuild\
+           r_cg_serial.rel DefaultBuild\r_cg_adc.rel DefaultBuild\r_cg_t
+           imer.rel DefaultBuild\r_cg_wdt.rel DefaultBuild\r_cg_wdt_user
+           .rel DefaultBuild\Buzzer.rel DefaultBuild\display.rel Default
+           Build\process_display.rel DefaultBuild\hal_key.rel DefaultBui
+           ld\key.rel DefaultBuild\key_handler.rel DefaultBuild\process_
+           key.rel DefaultBuild\KeyPBA.rel DefaultBuild\Port.rel Default
+           Build\timer.rel DefaultBuild\util.rel DefaultBuild\main.rel D
+           efaultBuild\process_sys_event.rel -bcl0ram.lib -bcl0rm.lib -b
+           cl0rmf.lib -iC:\Program Files (x86)\Renesas Electronics\CS+\C
+           ACX\CA78K0R\V1.72\lib78k0r
+Para-file:
+Out-file:  DefaultBuild\LIKE_KEY_PBA.lmf
+Map-file:  DefaultBuild\LIKE_KEY_PBA.map
+Direc-file:
+Directive:
+
+
+*** Link information ***
+
+    53 output segment(s)
+ 2591H byte(s) real data
+  2735 symbol(s) defined
+
+
+*** Memory map ***
+
+
+  SPACE=REGULAR
+
+  MEMORY=ROM
+  BASE ADDRESS=00000H   SIZE=20000H
+         OUTPUT   INPUT    INPUT      BASE      SIZE
+         SEGMENT  SEGMENT  MODULE     ADDRESS
+         @@VECT00                     00000H    00002H  CSEG AT
+                  @@VECT00 @cstart    00000H    00002H
+         @@CNSTL                      00002H    00000H  CSEG PAGE64KP
+                  @@CNSTL  @cstart    00002H    00000H
+         @@CNSTL                      00002H    00000H  CSEG PAGE64KP
+                  @@CNSTL  r_systeminit
+                                      00002H    00000H
+         @@CNSTL                      00002H    00000H  CSEG PAGE64KP
+                  @@CNSTL  r_cg_cgc   00002H    00000H
+         @@CNSTL                      00002H    00000H  CSEG PAGE64KP
+                  @@CNSTL  r_cg_cgc_user
+                                      00002H    00000H
+         @@CNSTL                      00002H    00000H  CSEG PAGE64KP
+                  @@CNSTL  r_cg_port
+                                      00002H    00000H
+         @@CNSTL                      00002H    00000H  CSEG PAGE64KP
+                  @@CNSTL  r_cg_intc
+                                      00002H    00000H
+         @@CNSTL                      00002H    00000H  CSEG PAGE64KP
+                  @@CNSTL  r_cg_serial
+                                      00002H    00000H
+         @@CNSTL                      00002H    00000H  CSEG PAGE64KP
+                  @@CNSTL  r_cg_adc   00002H    00000H
+         @@CNSTL                      00002H    00000H  CSEG PAGE64KP
+                  @@CNSTL  r_cg_timer
+                                      00002H    00000H
+         @@CNSTL                      00002H    00000H  CSEG PAGE64KP
+                  @@CNSTL  r_cg_wdt   00002H    00000H
+         @@CNSTL                      00002H    00000H  CSEG PAGE64KP
+                  @@CNSTL  r_cg_wdt_user
+                                      00002H    00000H
+         @@CNSTL                      00002H    00000H  CSEG PAGE64KP
+                  @@CNSTL  Buzzer     00002H    00000H
+         @@CNSTL                      00002H    00000H  CSEG PAGE64KP
+                  @@CNSTL  display    00002H    00000H
+         @@CNSTL                      00002H    00000H  CSEG PAGE64KP
+                  @@CNSTL  process_display
+                                      00002H    00000H
+         @@CNSTL                      00002H    00000H  CSEG PAGE64KP
+                  @@CNSTL  hal_key    00002H    00000H
+         @@CNSTL                      00002H    00000H  CSEG PAGE64KP
+                  @@CNSTL  key        00002H    00000H
+         @@CNSTL                      00002H    00000H  CSEG PAGE64KP
+                  @@CNSTL  key_handler
+                                      00002H    00000H
+         @@CNSTL                      00002H    00000H  CSEG PAGE64KP
+                  @@CNSTL  process_key
+                                      00002H    00000H
+         @@CNSTL                      00002H    00000H  CSEG PAGE64KP
+                  @@CNSTL  KeyPBA     00002H    00000H
+         @@CNSTL                      00002H    00000H  CSEG PAGE64KP
+                  @@CNSTL  Port       00002H    00000H
+         @@CNSTL                      00002H    00000H  CSEG PAGE64KP
+                  @@CNSTL  timer      00002H    00000H
+         @@CNSTL                      00002H    00000H  CSEG PAGE64KP
+                  @@CNSTL  util       00002H    00000H
+         @@CNSTL                      00002H    00000H  CSEG PAGE64KP
+                  @@CNSTL  main       00002H    00000H
+         @@CNSTL                      00002H    00000H  CSEG PAGE64KP
+                  @@CNSTL  process_sys_event
+                                      00002H    00000H
+         @@RLINIT                     00002H    00000H  CSEG UNIT64KP
+                  @@RLINIT @cstart    00002H    00000H
+                  @@RLINIT r_systeminit
+                                      00002H    00000H
+                  @@RLINIT r_cg_cgc   00002H    00000H
+                  @@RLINIT r_cg_cgc_user
+                                      00002H    00000H
+                  @@RLINIT r_cg_port
+                                      00002H    00000H
+                  @@RLINIT r_cg_intc
+                                      00002H    00000H
+                  @@RLINIT r_cg_serial
+                                      00002H    00000H
+                  @@RLINIT r_cg_adc   00002H    00000H
+                  @@RLINIT r_cg_timer
+                                      00002H    00000H
+                  @@RLINIT r_cg_wdt   00002H    00000H
+                  @@RLINIT r_cg_wdt_user
+                                      00002H    00000H
+                  @@RLINIT Buzzer     00002H    00000H
+                  @@RLINIT display    00002H    00000H
+                  @@RLINIT process_display
+                                      00002H    00000H
+                  @@RLINIT hal_key    00002H    00000H
+                  @@RLINIT key        00002H    00000H
+                  @@RLINIT key_handler
+                                      00002H    00000H
+                  @@RLINIT process_key
+                                      00002H    00000H
+                  @@RLINIT KeyPBA     00002H    00000H
+                  @@RLINIT Port       00002H    00000H
+                  @@RLINIT timer      00002H    00000H
+                  @@RLINIT util       00002H    00000H
+                  @@RLINIT main       00002H    00000H
+                  @@RLINIT process_sys_event
+                                      00002H    00000H
+                  @@RLINIT @rom       00002H    00000H
+         @@R_INIS                     00002H    00000H  CSEG UNIT64KP
+                  @@R_INIS @cstart    00002H    00000H
+                  @@R_INIS r_systeminit
+                                      00002H    00000H
+                  @@R_INIS r_cg_cgc   00002H    00000H
+                  @@R_INIS r_cg_cgc_user
+                                      00002H    00000H
+                  @@R_INIS r_cg_port
+                                      00002H    00000H
+                  @@R_INIS r_cg_intc
+                                      00002H    00000H
+                  @@R_INIS r_cg_serial
+                                      00002H    00000H
+                  @@R_INIS r_cg_adc   00002H    00000H
+                  @@R_INIS r_cg_timer
+                                      00002H    00000H
+                  @@R_INIS r_cg_wdt   00002H    00000H
+                  @@R_INIS r_cg_wdt_user
+                                      00002H    00000H
+                  @@R_INIS Buzzer     00002H    00000H
+                  @@R_INIS display    00002H    00000H
+                  @@R_INIS process_display
+                                      00002H    00000H
+                  @@R_INIS hal_key    00002H    00000H
+                  @@R_INIS key        00002H    00000H
+                  @@R_INIS key_handler
+                                      00002H    00000H
+                  @@R_INIS process_key
+                                      00002H    00000H
+                  @@R_INIS KeyPBA     00002H    00000H
+                  @@R_INIS Port       00002H    00000H
+                  @@R_INIS timer      00002H    00000H
+                  @@R_INIS util       00002H    00000H
+                  @@R_INIS main       00002H    00000H
+                  @@R_INIS process_sys_event
+                                      00002H    00000H
+                  @@R_INIS @rom       00002H    00000H
+         @@CALT                       00002H    00000H  CSEG
+                  @@CALT   @cstart    00002H    00000H
+                  @@CALT   r_systeminit
+                                      00002H    00000H
+                  @@CALT   r_cg_cgc   00002H    00000H
+                  @@CALT   r_cg_cgc_user
+                                      00002H    00000H
+                  @@CALT   r_cg_port
+                                      00002H    00000H
+                  @@CALT   r_cg_intc
+                                      00002H    00000H
+                  @@CALT   r_cg_serial
+                                      00002H    00000H
+                  @@CALT   r_cg_adc   00002H    00000H
+                  @@CALT   r_cg_timer
+                                      00002H    00000H
+                  @@CALT   r_cg_wdt   00002H    00000H
+                  @@CALT   r_cg_wdt_user
+                                      00002H    00000H
+                  @@CALT   Buzzer     00002H    00000H
+                  @@CALT   display    00002H    00000H
+                  @@CALT   process_display
+                                      00002H    00000H
+                  @@CALT   hal_key    00002H    00000H
+                  @@CALT   key        00002H    00000H
+                  @@CALT   key_handler
+                                      00002H    00000H
+                  @@CALT   process_key
+                                      00002H    00000H
+                  @@CALT   KeyPBA     00002H    00000H
+                  @@CALT   Port       00002H    00000H
+                  @@CALT   timer      00002H    00000H
+                  @@CALT   util       00002H    00000H
+                  @@CALT   main       00002H    00000H
+                  @@CALT   process_sys_event
+                                      00002H    00000H
+         ??NMIROM                     00002H    00002H  CSEG
+         @@VECT04                     00004H    00002H  CSEG AT
+                  @@VECT04 r_cg_wdt_user
+                                      00004H    00002H
+* gap *                               00006H    0000AH
+         @@VECT10                     00010H    00002H  CSEG AT
+                  @@VECT10 main       00010H    00002H
+* gap *                               00012H    0001AH
+         @@VECT2C                     0002CH    00002H  CSEG AT
+                  @@VECT2C timer      0002CH    00002H
+         @@VECT2E                     0002EH    00002H  CSEG AT
+                  @@VECT2E process_sys_event
+                                      0002EH    00002H
+* gap *                               00030H    00012H
+         @@VECT42                     00042H    00002H  CSEG AT
+                  @@VECT42 Buzzer     00042H    00002H
+* gap *                               00044H    0007CH
+         ?CSEGOB0                     000C0H    00004H  CSEG OPT_BYTE
+         @@CODE                       000C4H    00000H  CSEG BASE
+                  @@CODE   r_systeminit
+                                      000C4H    00000H
+                  @@CODE   r_cg_cgc   000C4H    00000H
+                  @@CODE   r_cg_cgc_user
+                                      000C4H    00000H
+                  @@CODE   r_cg_port
+                                      000C4H    00000H
+                  @@CODE   r_cg_intc
+                                      000C4H    00000H
+                  @@CODE   r_cg_serial
+                                      000C4H    00000H
+                  @@CODE   r_cg_adc   000C4H    00000H
+                  @@CODE   r_cg_timer
+                                      000C4H    00000H
+                  @@CODE   r_cg_wdt   000C4H    00000H
+                  @@CODE   r_cg_wdt_user
+                                      000C4H    00000H
+                  @@CODE   Buzzer     000C4H    00000H
+                  @@CODE   display    000C4H    00000H
+                  @@CODE   process_display
+                                      000C4H    00000H
+                  @@CODE   hal_key    000C4H    00000H
+                  @@CODE   key        000C4H    00000H
+                  @@CODE   key_handler
+                                      000C4H    00000H
+                  @@CODE   process_key
+                                      000C4H    00000H
+                  @@CODE   KeyPBA     000C4H    00000H
+                  @@CODE   Port       000C4H    00000H
+                  @@CODE   timer      000C4H    00000H
+                  @@CODE   util       000C4H    00000H
+                  @@CODE   main       000C4H    00000H
+                  @@CODE   process_sys_event
+                                      000C4H    00000H
+* gap *                               000C4H    0000AH
+         ?OCDSTAD                     000CEH    0000AH  CSEG
+         @@LCODE                      000D8H    00156H  CSEG BASE
+                  @@LCODE  @cstart    000D8H    000ADH
+                  @@LCODE  @cudiv     00185H    00034H
+                  @@LCODE  @curem     001B9H    00036H
+                  @@LCODE  @lursh     001EFH    0001FH
+                  @@LCODE  @iscmp     0020EH    0000CH
+                  @@LCODE  @lband     0021AH    00014H
+         @@BASE                       0022EH    000AAH  CSEG BASE
+                  @@BASE   r_systeminit
+                                      0022EH    00000H
+                  @@BASE   r_cg_cgc   0022EH    00000H
+                  @@BASE   r_cg_cgc_user
+                                      0022EH    00000H
+                  @@BASE   r_cg_port
+                                      0022EH    00000H
+                  @@BASE   r_cg_intc
+                                      0022EH    00000H
+                  @@BASE   r_cg_serial
+                                      0022EH    00000H
+                  @@BASE   r_cg_adc   0022EH    00000H
+                  @@BASE   r_cg_timer
+                                      0022EH    00000H
+                  @@BASE   r_cg_wdt   0022EH    00000H
+                  @@BASE   r_cg_wdt_user
+                                      0022EH    00002H
+                  @@BASE   Buzzer     00230H    00002H
+                  @@BASE   display    00232H    00000H
+                  @@BASE   process_display
+                                      00232H    00000H
+                  @@BASE   hal_key    00232H    00000H
+                  @@BASE   key        00232H    00000H
+                  @@BASE   key_handler
+                                      00232H    00000H
+                  @@BASE   process_key
+                                      00232H    00000H
+                  @@BASE   KeyPBA     00232H    00000H
+                  @@BASE   Port       00232H    00000H
+                  @@BASE   timer      00232H    00044H
+                  @@BASE   util       00276H    00000H
+                  @@BASE   main       00276H    00002H
+                  @@BASE   process_sys_event
+                                      00278H    00060H
+         @@R_INIT                     002D8H    0055EH  CSEG UNIT64KP
+                  @@R_INIT @cstart    002D8H    00000H
+                  @@R_INIT r_systeminit
+                                      002D8H    00000H
+                  @@R_INIT r_cg_cgc   002D8H    00000H
+                  @@R_INIT r_cg_cgc_user
+                                      002D8H    00000H
+                  @@R_INIT r_cg_port
+                                      002D8H    00000H
+                  @@R_INIT r_cg_intc
+                                      002D8H    00000H
+                  @@R_INIT r_cg_serial
+                                      002D8H    00000H
+                  @@R_INIT r_cg_adc   002D8H    00000H
+                  @@R_INIT r_cg_timer
+                                      002D8H    00000H
+                  @@R_INIT r_cg_wdt   002D8H    00000H
+                  @@R_INIT r_cg_wdt_user
+                                      002D8H    00000H
+                  @@R_INIT Buzzer     002D8H    00354H
+                  @@R_INIT display    0062CH    00002H
+                  @@R_INIT process_display
+                                      0062EH    00002H
+                  @@R_INIT hal_key    00630H    00000H
+                  @@R_INIT key        00630H    00000H
+                  @@R_INIT key_handler
+                                      00630H    001F8H
+                  @@R_INIT process_key
+                                      00828H    00002H
+                  @@R_INIT KeyPBA     0082AH    00000H
+                  @@R_INIT Port       0082AH    00000H
+                  @@R_INIT timer      0082AH    00008H
+                  @@R_INIT util       00832H    00000H
+                  @@R_INIT main       00832H    00000H
+                  @@R_INIT process_sys_event
+                                      00832H    00004H
+                  @@R_INIT @rom       00836H    00000H
+         @@CODEL                      00836H    01B56H  CSEG
+                  @@CODEL  r_systeminit
+                                      00836H    00033H
+                  @@CODEL  r_cg_cgc   00869H    00017H
+                  @@CODEL  r_cg_cgc_user
+                                      00880H    00005H
+                  @@CODEL  r_cg_port
+                                      00885H    00059H
+                  @@CODEL  r_cg_intc
+                                      008DEH    0009DH
+                  @@CODEL  r_cg_serial
+                                      0097BH    0036DH
+                  @@CODEL  r_cg_adc   00CE8H    00059H
+                  @@CODEL  r_cg_timer
+                                      00D41H    00217H
+                  @@CODEL  r_cg_wdt   00F58H    00014H
+                  @@CODEL  r_cg_wdt_user
+                                      00F6CH    00000H
+                  @@CODEL  Buzzer     00F6CH    00370H
+                  @@CODEL  display    012DCH    001EDH
+                  @@CODEL  process_display
+                                      014C9H    001E2H
+                  @@CODEL  hal_key    016ABH    002FEH
+                  @@CODEL  key        019A9H    00158H
+                  @@CODEL  key_handler
+                                      01B01H    00187H
+                  @@CODEL  process_key
+                                      01C88H    00299H
+                  @@CODEL  KeyPBA     01F21H    00012H
+                  @@CODEL  Port       01F33H    00068H
+                  @@CODEL  timer      01F9BH    00138H
+                  @@CODEL  util       020D3H    000C9H
+                  @@CODEL  main       0219CH    000C4H
+                  @@CODEL  process_sys_event
+                                      02260H    0012CH
+         @@LCODEL                     0238CH    00079H  CSEG
+                  @@LCODEL @stkinit   0238CH    00044H
+                  @@LCODEL exit       023D0H    0001CH
+                  @@LCODEL memset_n   023ECH    00019H
+* gap *                               02405H    00BFBH
+         @@CNST                       03000H    00048H  CSEG MIRRORP
+                  @@CNST   @cstart    03000H    00000H
+                  @@CNST   r_systeminit
+                                      03000H    00000H
+                  @@CNST   r_cg_cgc   03000H    00000H
+                  @@CNST   r_cg_cgc_user
+                                      03000H    00000H
+                  @@CNST   r_cg_port
+                                      03000H    00000H
+                  @@CNST   r_cg_intc
+                                      03000H    00000H
+                  @@CNST   r_cg_serial
+                                      03000H    00000H
+                  @@CNST   r_cg_adc   03000H    00000H
+                  @@CNST   r_cg_timer
+                                      03000H    00000H
+                  @@CNST   r_cg_wdt   03000H    00000H
+                  @@CNST   r_cg_wdt_user
+                                      03000H    00000H
+                  @@CNST   Buzzer     03000H    00000H
+                  @@CNST   display    03000H    00000H
+                  @@CNST   process_display
+                                      03000H    00000H
+                  @@CNST   hal_key    03000H    00000H
+                  @@CNST   key        03000H    00000H
+                  @@CNST   key_handler
+                                      03000H    00000H
+                  @@CNST   process_key
+                                      03000H    00000H
+                  @@CNST   KeyPBA     03000H    00000H
+                  @@CNST   Port       03000H    00000H
+                  @@CNST   timer      03000H    00000H
+                  @@CNST   util       03000H    00000H
+                  @@CNST   main       03000H    00000H
+                  @@CNST   process_sys_event
+                                      03000H    00048H
+* gap *                               03048H    1CDB8H
+         ??OCDROM                     1FE00H    00200H  CSEG
+
+  MEMORY=RAM
+  BASE ADDRESS=FCF00H   SIZE=03100H
+         OUTPUT   INPUT    INPUT      BASE      SIZE
+         SEGMENT  SEGMENT  MODULE     ADDRESS
+         @@DATA                       FCF00H    0015CH  DSEG BASEP
+                  @@DATA   @cstart    FCF00H    000BAH
+                  @@DATA   r_systeminit
+                                      FCFBAH    00000H
+                  @@DATA   r_cg_cgc   FCFBAH    00000H
+                  @@DATA   r_cg_cgc_user
+                                      FCFBAH    00000H
+                  @@DATA   r_cg_port
+                                      FCFBAH    00000H
+                  @@DATA   r_cg_intc
+                                      FCFBAH    00000H
+                  @@DATA   r_cg_serial
+                                      FCFBAH    00020H
+                  @@DATA   r_cg_adc   FCFDAH    00000H
+                  @@DATA   r_cg_timer
+                                      FCFDAH    00000H
+                  @@DATA   r_cg_wdt   FCFDAH    00000H
+                  @@DATA   r_cg_wdt_user
+                                      FCFDAH    00000H
+                  @@DATA   Buzzer     FCFDAH    00006H
+                  @@DATA   display    FCFE0H    00010H
+                  @@DATA   process_display
+                                      FCFF0H    00008H
+                  @@DATA   hal_key    FCFF8H    00004H
+                  @@DATA   key        FCFFCH    00010H
+                  @@DATA   key_handler
+                                      FD00CH    00000H
+                  @@DATA   process_key
+                                      FD00CH    00000H
+                  @@DATA   KeyPBA     FD00CH    00002H
+                  @@DATA   Port       FD00EH    00000H
+                  @@DATA   timer      FD00EH    0004EH
+                  @@DATA   util       FD05CH    00000H
+                  @@DATA   main       FD05CH    00000H
+                  @@DATA   process_sys_event
+                                      FD05CH    00000H
+                  @@DATA   @rom       FD05CH    00000H
+         @@INIT                       FD05CH    0055EH  DSEG BASEP
+                  @@INIT   @cstart    FD05CH    00000H
+                  @@INIT   r_systeminit
+                                      FD05CH    00000H
+                  @@INIT   r_cg_cgc   FD05CH    00000H
+                  @@INIT   r_cg_cgc_user
+                                      FD05CH    00000H
+                  @@INIT   r_cg_port
+                                      FD05CH    00000H
+                  @@INIT   r_cg_intc
+                                      FD05CH    00000H
+                  @@INIT   r_cg_serial
+                                      FD05CH    00000H
+                  @@INIT   r_cg_adc   FD05CH    00000H
+                  @@INIT   r_cg_timer
+                                      FD05CH    00000H
+                  @@INIT   r_cg_wdt   FD05CH    00000H
+                  @@INIT   r_cg_wdt_user
+                                      FD05CH    00000H
+                  @@INIT   Buzzer     FD05CH    00354H
+                  @@INIT   display    FD3B0H    00002H
+                  @@INIT   process_display
+                                      FD3B2H    00002H
+                  @@INIT   hal_key    FD3B4H    00000H
+                  @@INIT   key        FD3B4H    00000H
+                  @@INIT   key_handler
+                                      FD3B4H    001F8H
+                  @@INIT   process_key
+                                      FD5ACH    00002H
+                  @@INIT   KeyPBA     FD5AEH    00000H
+                  @@INIT   Port       FD5AEH    00000H
+                  @@INIT   timer      FD5AEH    00008H
+                  @@INIT   util       FD5B6H    00000H
+                  @@INIT   main       FD5B6H    00000H
+                  @@INIT   process_sys_event
+                                      FD5B6H    00004H
+                  @@INIT   @rom       FD5BAH    00000H
+         @@INIS                       FD5BAH    00000H  DSEG UNITP
+                  @@INIS   @cstart    FD5BAH    00000H
+                  @@INIS   r_systeminit
+                                      FD5BAH    00000H
+                  @@INIS   r_cg_cgc   FD5BAH    00000H
+                  @@INIS   r_cg_cgc_user
+                                      FD5BAH    00000H
+                  @@INIS   r_cg_port
+                                      FD5BAH    00000H
+                  @@INIS   r_cg_intc
+                                      FD5BAH    00000H
+                  @@INIS   r_cg_serial
+                                      FD5BAH    00000H
+                  @@INIS   r_cg_adc   FD5BAH    00000H
+                  @@INIS   r_cg_timer
+                                      FD5BAH    00000H
+                  @@INIS   r_cg_wdt   FD5BAH    00000H
+                  @@INIS   r_cg_wdt_user
+                                      FD5BAH    00000H
+                  @@INIS   Buzzer     FD5BAH    00000H
+                  @@INIS   display    FD5BAH    00000H
+                  @@INIS   process_display
+                                      FD5BAH    00000H
+                  @@INIS   hal_key    FD5BAH    00000H
+                  @@INIS   key        FD5BAH    00000H
+                  @@INIS   key_handler
+                                      FD5BAH    00000H
+                  @@INIS   process_key
+                                      FD5BAH    00000H
+                  @@INIS   KeyPBA     FD5BAH    00000H
+                  @@INIS   Port       FD5BAH    00000H
+                  @@INIS   timer      FD5BAH    00000H
+                  @@INIS   util       FD5BAH    00000H
+                  @@INIS   main       FD5BAH    00000H
+                  @@INIS   process_sys_event
+                                      FD5BAH    00000H
+                  @@INIS   @rom       FD5BAH    00000H
+         @@DATS                       FD5BAH    00000H  DSEG UNITP
+                  @@DATS   @cstart    FD5BAH    00000H
+                  @@DATS   r_systeminit
+                                      FD5BAH    00000H
+                  @@DATS   r_cg_cgc   FD5BAH    00000H
+                  @@DATS   r_cg_cgc_user
+                                      FD5BAH    00000H
+                  @@DATS   r_cg_port
+                                      FD5BAH    00000H
+                  @@DATS   r_cg_intc
+                                      FD5BAH    00000H
+                  @@DATS   r_cg_serial
+                                      FD5BAH    00000H
+                  @@DATS   r_cg_adc   FD5BAH    00000H
+                  @@DATS   r_cg_timer
+                                      FD5BAH    00000H
+                  @@DATS   r_cg_wdt   FD5BAH    00000H
+                  @@DATS   r_cg_wdt_user
+                                      FD5BAH    00000H
+                  @@DATS   Buzzer     FD5BAH    00000H
+                  @@DATS   display    FD5BAH    00000H
+                  @@DATS   process_display
+                                      FD5BAH    00000H
+                  @@DATS   hal_key    FD5BAH    00000H
+                  @@DATS   key        FD5BAH    00000H
+                  @@DATS   key_handler
+                                      FD5BAH    00000H
+                  @@DATS   process_key
+                                      FD5BAH    00000H
+                  @@DATS   KeyPBA     FD5BAH    00000H
+                  @@DATS   Port       FD5BAH    00000H
+                  @@DATS   timer      FD5BAH    00000H
+                  @@DATS   util       FD5BAH    00000H
+                  @@DATS   main       FD5BAH    00000H
+                  @@DATS   process_sys_event
+                                      FD5BAH    00000H
+                  @@DATS   @rom       FD5BAH    00000H
+         @@INITL                      FD5BAH    00000H  DSEG UNIT64KP
+                  @@INITL  @cstart    FD5BAH    00000H
+                  @@INITL  r_systeminit
+                                      FD5BAH    00000H
+                  @@INITL  r_cg_cgc   FD5BAH    00000H
+                  @@INITL  r_cg_cgc_user
+                                      FD5BAH    00000H
+                  @@INITL  r_cg_port
+                                      FD5BAH    00000H
+                  @@INITL  r_cg_intc
+                                      FD5BAH    00000H
+                  @@INITL  r_cg_serial
+                                      FD5BAH    00000H
+                  @@INITL  r_cg_adc   FD5BAH    00000H
+                  @@INITL  r_cg_timer
+                                      FD5BAH    00000H
+                  @@INITL  r_cg_wdt   FD5BAH    00000H
+                  @@INITL  r_cg_wdt_user
+                                      FD5BAH    00000H
+                  @@INITL  Buzzer     FD5BAH    00000H
+                  @@INITL  display    FD5BAH    00000H
+                  @@INITL  process_display
+                                      FD5BAH    00000H
+                  @@INITL  hal_key    FD5BAH    00000H
+                  @@INITL  key        FD5BAH    00000H
+                  @@INITL  key_handler
+                                      FD5BAH    00000H
+                  @@INITL  process_key
+                                      FD5BAH    00000H
+                  @@INITL  KeyPBA     FD5BAH    00000H
+                  @@INITL  Port       FD5BAH    00000H
+                  @@INITL  timer      FD5BAH    00000H
+                  @@INITL  util       FD5BAH    00000H
+                  @@INITL  main       FD5BAH    00000H
+                  @@INITL  process_sys_event
+                                      FD5BAH    00000H
+                  @@INITL  @rom       FD5BAH    00000H
+         @@DATAL                      FD5BAH    00000H  DSEG UNIT64KP
+                  @@DATAL  @cstart    FD5BAH    00000H
+                  @@DATAL  r_systeminit
+                                      FD5BAH    00000H
+                  @@DATAL  r_cg_cgc   FD5BAH    00000H
+                  @@DATAL  r_cg_cgc_user
+                                      FD5BAH    00000H
+                  @@DATAL  r_cg_port
+                                      FD5BAH    00000H
+                  @@DATAL  r_cg_intc
+                                      FD5BAH    00000H
+                  @@DATAL  r_cg_serial
+                                      FD5BAH    00000H
+                  @@DATAL  r_cg_adc   FD5BAH    00000H
+                  @@DATAL  r_cg_timer
+                                      FD5BAH    00000H
+                  @@DATAL  r_cg_wdt   FD5BAH    00000H
+                  @@DATAL  r_cg_wdt_user
+                                      FD5BAH    00000H
+                  @@DATAL  Buzzer     FD5BAH    00000H
+                  @@DATAL  display    FD5BAH    00000H
+                  @@DATAL  process_display
+                                      FD5BAH    00000H
+                  @@DATAL  hal_key    FD5BAH    00000H
+                  @@DATAL  key        FD5BAH    00000H
+                  @@DATAL  key_handler
+                                      FD5BAH    00000H
+                  @@DATAL  process_key
+                                      FD5BAH    00000H
+                  @@DATAL  KeyPBA     FD5BAH    00000H
+                  @@DATAL  Port       FD5BAH    00000H
+                  @@DATAL  timer      FD5BAH    00000H
+                  @@DATAL  util       FD5BAH    00000H
+                  @@DATAL  main       FD5BAH    00000H
+                  @@DATAL  process_sys_event
+                                      FD5BAH    00000H
+                  @@DATAL  @rom       FD5BAH    00000H
+         @@BITS                       FD5BAH    00000H  BSEG
+                  @@BITS   @cstart    FD5BAH.0  00000H.0
+                  @@BITS   r_systeminit
+                                      FD5BAH.0  00000H.0
+                  @@BITS   r_cg_cgc   FD5BAH.0  00000H.0
+                  @@BITS   r_cg_cgc_user
+                                      FD5BAH.0  00000H.0
+                  @@BITS   r_cg_port
+                                      FD5BAH.0  00000H.0
+                  @@BITS   r_cg_intc
+                                      FD5BAH.0  00000H.0
+                  @@BITS   r_cg_serial
+                                      FD5BAH.0  00000H.0
+                  @@BITS   r_cg_adc   FD5BAH.0  00000H.0
+                  @@BITS   r_cg_timer
+                                      FD5BAH.0  00000H.0
+                  @@BITS   r_cg_wdt   FD5BAH.0  00000H.0
+                  @@BITS   r_cg_wdt_user
+                                      FD5BAH.0  00000H.0
+                  @@BITS   Buzzer     FD5BAH.0  00000H.0
+                  @@BITS   display    FD5BAH.0  00000H.0
+                  @@BITS   process_display
+                                      FD5BAH.0  00000H.0
+                  @@BITS   hal_key    FD5BAH.0  00000H.0
+                  @@BITS   key        FD5BAH.0  00000H.0
+                  @@BITS   key_handler
+                                      FD5BAH.0  00000H.0
+                  @@BITS   process_key
+                                      FD5BAH.0  00000H.0
+                  @@BITS   KeyPBA     FD5BAH.0  00000H.0
+                  @@BITS   Port       FD5BAH.0  00000H.0
+                  @@BITS   timer      FD5BAH.0  00000H.0
+                  @@BITS   util       FD5BAH.0  00000H.0
+                  @@BITS   main       FD5BAH.0  00000H.0
+                  @@BITS   process_sys_event
+                                      FD5BAH.0  00000H.0
+* gap *                               FD5BAH    0291AH
+         @@SEGREG                     FFED4H    00004H  DSEG AT
+                  @@SEGREG @SEGREG    FFED4H    00004H
+         @@RTARG0                     FFED8H    00008H  DSEG AT
+                  @@RTARG0 @RTARG0    FFED8H    00008H
+* gap *                               FFEE0H    00020H
+* gap (Not Free Area) *               FFF00H    00100H
+
+
+ Target chip : R5F100PG
+ Device file : V1.14
+
