@@ -3,6 +3,8 @@
 
 #include "prj_type.h"
 
+//Change_key_event
+
 /* MULTI KEY */
 #define  K_SETTING              ( K_CLEAN | K_STOP )
 #define  K_AGING                ( K_CLEAN | K_BIDET )
